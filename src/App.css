@@ -1,0 +1,71 @@
+body,
+html {
+  font-family: 'Lato', sans-serif;
+  background-color: #282c34;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: #3b3f47;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 320px;
+}
+
+.result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #1c1e22;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.item {
+  background-color: #4b4f58;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.5em;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: #5c5f68;
+}
+
+.itemZero {
+  grid-column: span 2;
+}
+
+.clear,
+.negative,
+.percent,
+.sqrt,
+.power {
+  background-color: #ff6f61;
+}
+
+.sign {
+  background-color: #ffa500;
+}
+
+.equals {
+  background-color: #32cd32;
+}
